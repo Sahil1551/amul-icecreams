@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+CONTACT
+{% endblock title %}
+{% block body %}
+<div ><img src="https://waytoweb.in/wp-content/uploads/2015/08/contact.jpg" width="1536" height="600">
+</div>
+<div class="container my-4" ><h1 class="text-centre">CONTACT US</h1></div>
+
+<form action="" method="post"  >
+{% csrf_token %}
+<div class="container">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">NAME</label>
+  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="ENTER YOUR NAME">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">EMAIL ADDRESS</label>
+  <input type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">PHONE NUMBER</label>
+  <input type="number" name="phone" class="form-control" id="exampleFormControlInput3" placeholder="ENTER YOUR PHONE NUMBER">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">FOR WHAT REASONS U WANT TO CONTACT US</label>
+  <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<div>
+    <input type="submit" class="btn btn-success" value="SUBMIT">
+    <p>WE WILL CONTACT U BACK AS WE WILL CALL YOU</p>
+    <P>THANK YOU </P>
+
+</div>
+</div>
+</form>
+{% endblock body %}

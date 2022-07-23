@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+DETAIL |
+{% endblock title %}
+{% block body %}
+<div class="container my-4" ><h1 class="text-centre">DETAILS</h1></div>
+
+<form action="fudge" method="POST"  >
+    {% csrf_token %}
+<div class="container">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">NAME</label>
+  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="ENTER YOUR NAME">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">EMAIL ADDRESS</label>
+  <input type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">PHONE NUMBER</label>
+  <input type="number" name="phone" class="form-control" id="exampleFormControlInput3" placeholder="ENTER YOUR PHONE NUMBER">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">ADDRESS</label>
+  <textarea class="form-control" name="add" id="exampleFormControlTextarea1" rows="2"></textarea>
+</div>
+<div>
+    <button type="submit" class="btn btn-success" value="SUBMIT" > Submit </button>
+    <p>YOUR ORDER WILL BE REACHED IS 30-45 MINS</p>
+    <P>THANK YOU </P>
+
+</div>
+</div>
+</form>
+{% endblock body %}

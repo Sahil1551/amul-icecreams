@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% block title %}
+HOME
+{% endblock title %}
+{% block body %}
+<div class="container my-4" xmlns="http://www.w3.org/1999/html"><div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.itl.cat/pngfile/big/108-1087692_veer-agency-amul-ice-cream-wagholi-pune-amul.jpg" width="1600" height="600" class="d-block w-100" alt="">
+
+    </div>
+    <div class="carousel-item">
+      <img src="https://webmonkey.in/wp-content/uploads/2020/05/amul-ice-cream.jpg" width="1600" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/qsqriiurfar56dqdh3ks" width="1600" height="600" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="container my-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://b.zmtcdn.com/data/pictures/chains/6/40886/b7e6a27fe151db406fb04d2af3c0f1ce.jpg" height="300" width="420">
+        <div class="card-body">
+          <p class="card-text">BUTTERSCOTCH CUP</p>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a class="btn btn-success" href="{% url 'buy_butterscotch_cup' %}"><b>Buy</b></a>
+              </div>
+            <small class="text-muted">$0.52</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+          <div class="card shadow-sm">
+            <img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/o1zol2srycabbym9bnk4" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">CREAMY ALMOND</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a class="btn btn-success" href="{% url 'buy_creamy_almond' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$1.93</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40003794_1-amul-real-ice-cream-roasted-almond.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">ROASTED ALMOND</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-success" href="{% url 'buy_roasted_almond' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$3.22</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="https://image3.mouthshut.com/images/ImagesR/2016/9/Amul-Ice-Cream-925062707-8052334-1.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">BUTTER SCOTCH TRICONE</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-success" href="{% url 'buy_butterscotch_tricone' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$0.64</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://soulbowl.in/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/a/m/amul_ice_cream_vanilla.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">VANILLA ROYALE</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a class="btn btn-success" href="{% url 'buy_vanilla_royale' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$1.55</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://www.bigbasket.com/media/uploads/p/l/40003796_2-amul-real-ice-cream-chocolate-brownie.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">CHOCOLATE BROWNIE</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a class="btn btn-success" href="{% url 'buy_chocolate_brownie' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$3.22</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://www.cpdubai.com/wp-content/uploads/2018/10/Amul-Ice-Cream-Creme-Rich-Chocolate-Fudge.png" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">CHOCOLATE FUDGE</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-success" href="{% url 'buy_chocolate_fudge' %}"><b>Buy</b></a>
+
+                </div>
+                <small class="text-muted">$6.45</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://n2.sdlcdn.com/imgs/e/j/h/Amul-1000-ml-Pack-of-SDL886781358-1-664d1.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">MOROCON DRY FRUIT</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-success" href="{% url 'buy_morocon' %}"><b>Buy</b></a>
+                  
+                </div>
+                <small class="text-muted">$4.51</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="https://www.quicklly.com/upload_images/product/1607715666-amul-epic-choco-almond.jpg" height="300" width="420">
+            <div class="card-body">
+              <p class="card-text">CHOCOLATE CAPUCCINO</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <a class="btn btn-success" href="{% url 'buy_chocolate_capucino' %}"><b>Buy</b></a>
+                  </div>
+                <small class="text-muted">$0.77</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock body%}
